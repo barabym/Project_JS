@@ -1,0 +1,11 @@
+<button>Alt+Shift+Кликни меня!</button>
+
+<script>
+  document.body.children[0].onclick = function(e) {
+    alert (e.altKey +" "+ e.shiftKey);
+    if (e.altKey || e.shiftKey) return;
+
+    
+    alert( 'Ура!' );
+  }
+</script>
