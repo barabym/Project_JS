@@ -1,0 +1,23 @@
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-100px);
+  transform-origin: right top;
+  
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  transform: rotate(90deg);
+  transform-origin: center center;
+}
+.proba {
+ height: 100px;
+
+
+}

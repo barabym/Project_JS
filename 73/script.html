@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+
+<body>
+  <H1>Динамическое заполнение списка</H1>
+  <FORM NAME="Sel">
+    <!-- Пустой список ссылок-->
+    <SELECT NAME="ListOfLinks">
+    </SELECT>
+    <!-- Кнопка активизации выбранной ссылки-->
+
+  </FORM>
+
+  <script>
+    let aaa = [1, 2, 3, 4, 5, 6, 7, 8];
+    for (i = 0; i < aaa.length; i++) {
+      document.Sel.ListOfLinks.options[i] = new Option(aaa[i], i, false, false);
+    }
+
+    document.Sel.ListOfLinks.selectedIndex = 0;
+
+  </script>
+</body>
+
+</html>
